@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-material-ui',
       options: {
-       //pathToTheme: 'src/themes/default',
+       pathToTheme: 'src/themes/default',
       }
     },
     {
