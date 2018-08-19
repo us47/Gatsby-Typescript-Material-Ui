@@ -43,6 +43,14 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
     }
   }
 
+  componentDidMount() {
+    // Remove the server-side injected CSS.
+    const jssStyles = document.querySelector('#server-side-jss');
+    if (jssStyles && jssStyles.parentNode) {
+      jssStyles.parentNode.removeChild(jssStyles);
+    }
+  }
+  
   handleChange(input:string,event:any){
     if(CreateRequired[input]){
       if(!event.target.value){
@@ -164,7 +172,7 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
                 error ={CreateError['medicalHistory']}
                 helperText="List if you have ever experienced any medical condition"
                 margin="normal" />
-
+                
                 <Button variant="contained" color="secondary" onClick={this.handleSubmit.bind(this)}>Submit</Button>
             </form>
           </Paper>

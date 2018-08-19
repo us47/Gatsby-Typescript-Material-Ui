@@ -29,11 +29,10 @@ class Layout extends React.Component<LayoutProps, LayoutStates> {
       this.setState({isDayTheme:event.target.checked});
   };
   componentDidMount() {
-      // Remove the server-side injected CSS.
-      const jssStyles = document.querySelector('#server-side-jss');
-      if (jssStyles && jssStyles.parentNode) {
-        jssStyles.parentNode.removeChild(jssStyles);
-      }
+    const jssStyles = document.getElementById('jss-server-side');
+    if (jssStyles && jssStyles.parentNode) {
+      jssStyles.parentNode.removeChild(jssStyles);
+    }
   }
   public render() {
     return (

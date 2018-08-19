@@ -7,16 +7,16 @@ module.exports = {
     // Add typescript stack into webpack
     `gatsby-plugin-typescript`,
     {
-      resolve: 'gatsby-plugin-material-ui',
-      options: {
-       pathToTheme: 'src/themes/default',
-      }
-    },
-    {
       resolve: `gatsby-plugin-typography`,
       options: {
         //pathToConfigModule: `src/utils/typography`,
       },
-    }
+    },
+    //{
+      //resolve: `gatsby-plugin-styled-components`,
+      //options: {
+        // Add any options here
+      //},
+    //}
   ]
 }
