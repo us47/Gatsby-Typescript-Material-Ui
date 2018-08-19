@@ -29,10 +29,6 @@ class Layout extends React.Component<LayoutProps, LayoutStates> {
       this.setState({isDayTheme:event.target.checked});
   };
   componentDidMount() {
-    const jssStyles = document.getElementById('jss-server-side');
-    if (jssStyles && jssStyles.parentNode) {
-      jssStyles.parentNode.removeChild(jssStyles);
-    }
     this.setState({isDayTheme:true});
   }
   public render() {

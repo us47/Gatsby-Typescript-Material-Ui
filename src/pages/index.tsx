@@ -21,12 +21,7 @@ export default class extends React.Component<IndexPageProps, {}> {
       open: false,
     };
   }
-  componentDidMount() {
-    const jssStyles = document.getElementById('jss-server-side');
-    if (jssStyles && jssStyles.parentNode) {
-      jssStyles.parentNode.removeChild(jssStyles);
-    }
-  }
+  
   public render(){
     return (
       <Layout>
