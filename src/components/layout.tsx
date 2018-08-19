@@ -28,10 +28,10 @@ class Layout extends React.PureComponent<LayoutProps, LayoutStates> {
     handleTheme(event:any){
       this.setState({isDayTheme:event.target.checked});
     };
-    
+
   public render() {
     return (
-      <MuiThemeProvider theme={this.state.isDayTheme==true?dayTheme:defaultTheme}>
+      <MuiThemeProvider theme={this.state.isDayTheme==true?dayTheme:dayTheme}>
       <div style={{ margin: `0 auto`, maxWidth: 1100, padding: `2rem 2rem` }}>      
         <Grid container spacing={24}>
           <Grid item xs={12} sm={12}>
