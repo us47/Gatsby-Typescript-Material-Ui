@@ -18,7 +18,7 @@ export interface LayoutStates {
   isDayTheme?:boolean,
 }
 
-class Layout extends React.PureComponent<LayoutProps, LayoutStates> {
+class Layout extends React.Component<LayoutProps, LayoutStates> {
   constructor (props:any){
     super(props);
       this.state={
@@ -31,7 +31,7 @@ class Layout extends React.PureComponent<LayoutProps, LayoutStates> {
 
   public render() {
     return (
-      <MuiThemeProvider theme={this.state.isDayTheme==true?dayTheme:dayTheme}>
+      <MuiThemeProvider theme={this.state.isDayTheme==true?dayTheme:defaultTheme}>
       <div style={{ margin: `0 auto`, maxWidth: 1100, padding: `2rem 2rem` }}>      
         <Grid container spacing={24}>
           <Grid item xs={12} sm={12}>
