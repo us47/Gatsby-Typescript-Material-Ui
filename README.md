@@ -1,5 +1,6 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# gatsby-Typescript-Material-Ui
+
+Gatsby v2.0.
 
 For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
@@ -23,5 +24,5 @@ gatsby develop
 
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/us47/Gatsby-Typescript-Material-Ui)
 "# Gatsby-Typescript-Material-Ui" 
