@@ -30,10 +30,8 @@ export default class extends React.Component<IndexPageProps, {}> {
   public render(){
     return (
       <Layout>
-        <div>
         <Typography variant="display1" color="primary">Hi People</Typography>
         <Typography variant="body2" color="secondary">Welcome to new{' '} {this.props.data.site.siteMetadata.title}</Typography>
-        </div>
       </Layout>
     )
   }

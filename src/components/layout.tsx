@@ -33,6 +33,7 @@ class Layout extends React.Component<LayoutProps, LayoutStates> {
     if (jssStyles && jssStyles.parentNode) {
       jssStyles.parentNode.removeChild(jssStyles);
     }
+    this.setState({isDayTheme:true});
   }
   public render() {
     return (
