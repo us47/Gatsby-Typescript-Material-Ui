@@ -7,7 +7,9 @@ const defaultTheme = createMuiTheme({
   palette: {
     primary: blueGrey,
     secondary: indigo,
-    error: red
+    error: red,
+    contrastThreshold: 3,
+    tonalOffset: 0.2,
   },
   typography: {
     // Use the system font instead of the default Roboto font.
