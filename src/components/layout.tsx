@@ -23,12 +23,18 @@ class Layout extends React.Component<LayoutProps, LayoutStates> {
     super(props);
       this.state={
         isDayTheme:false
-      }}
-
-    handleTheme(event:any){
+      }
+  }
+  handleTheme(event:any){
       this.setState({isDayTheme:event.target.checked});
-    };
-
+  };
+  componentDidMount() {
+      // Remove the server-side injected CSS.
+      const jssStyles = document.querySelector('#server-side-jss');
+      if (jssStyles && jssStyles.parentNode) {
+        jssStyles.parentNode.removeChild(jssStyles);
+      }
+  }
   public render() {
     return (
       <MuiThemeProvider theme={this.state.isDayTheme==true?dayTheme:defaultTheme}>
