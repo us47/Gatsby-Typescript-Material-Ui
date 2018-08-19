@@ -84,12 +84,11 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
       return <div>{customer.firstName}</div>
     });
     return (
-      <Grid container spacing={24} >
-        <Grid item sm={4}>
+      <Grid container spacing={16} >
+        <Grid item xs={6} sm={4}>
           <Paper style={{textAlign:"left" , padding: `1rem 2rem`}}>
           <Typography variant="body2"> Registration Form  </Typography>
             <form id="frmCustomer">
-              <div >
                 <TextField 
                   id="firstName"
                   label="First Name"
@@ -101,8 +100,7 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
                   helperText={CreateError['firstName']?"Required":""}
                   margin="normal" />              
                 <AccountIcon />
-              </div>
-              <div>
+
                 <TextField 
                   id="lastName" 
                   label="Last Name"
@@ -113,8 +111,7 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
                   error ={CreateError['lastName']}
                   margin="normal" />
                 <AccountIcon />
-              </div>
-              <div>
+
                 <TextField 
                   id="dateOfBirth"  
                   label="Date Of Birth" 
@@ -127,8 +124,7 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
                   style={{width: 200}}
                   margin="normal" />
                 <BirthDateIcon/>
-              </div>
-              <div>
+
                 <TextField 
                   id="contactNum" 
                   label="Contact Number"
@@ -141,8 +137,7 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
                   helperText={CreateError['contactNum']?"Required":""}
                   margin="normal" />
                 <ContactIcon />
-              </div>
-              <div>
+
               <TextField 
                 id="allergies" 
                 label="Allergies"
@@ -155,8 +150,7 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
                 error ={CreateError['allergies']}
                 helperText= "List all known allergies (drugs, food, animals, etc.)"
                 margin="normal" />
-              </div>
-              <div>
+
               <TextField 
                 id="medicalHistory"  
                 label="Medical History"
@@ -170,14 +164,12 @@ class CustomerCreate extends React.Component<{},CustomerCreateState> {
                 error ={CreateError['medicalHistory']}
                 helperText="List if you have ever experienced any medical condition"
                 margin="normal" />
-              </div>
-              <div>
+
                 <Button variant="contained" color="secondary" onClick={this.handleSubmit.bind(this)}>Submit</Button>
-              </div>
             </form>
           </Paper>
         </Grid>
-        <Grid item sm={8} >
+        <Grid item xs={12} sm={8} >
           <CustomerDetails />
         </Grid>
       </Grid>
