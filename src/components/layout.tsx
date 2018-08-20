@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Header from './layout.scss';
+import './layout.scss';
 import Link from "gatsby-link"
 import Grid from '@material-ui/core/Grid';
 import Paper from "@material-ui/core/Paper";
