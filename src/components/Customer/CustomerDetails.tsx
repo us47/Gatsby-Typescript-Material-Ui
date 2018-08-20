@@ -15,7 +15,7 @@ class CustomerDetails extends React.Component<{},{}>{
     render() {
         return(
             <Paper style={{textAlign:"center", padding: `0.5rem 0.5rem`,marginLeft:'0.5rem'}}>
-                <p>Submitted Form</p>
+                <h4>Submitted</h4><p>Forms</p>
                 <Table>
                     <TableHead >
                         <TableRow>
